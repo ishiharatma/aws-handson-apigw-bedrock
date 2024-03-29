@@ -184,7 +184,7 @@ export class AwsHandsonApigwBedrockStack extends cdk.Stack {
     //API Gatewayにリクエスト先のリソースを追加
     const restApiBedrock = restApi.root.addResource('bedrock');
 
-    //リソースにGETメソッド、Lambda統合プロキシを指定
+    //リソースにPOSTメソッド、Lambda統合プロキシを指定
     //restApiBedrock.addCorsPreflight({
     //  allowOrigins: ['http://localhost:3000'],
     //  allowMethods: ['PUT'],
